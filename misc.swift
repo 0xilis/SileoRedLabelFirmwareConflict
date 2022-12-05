@@ -1,3 +1,5 @@
+//by Snoolie / 0xilis, licensed under MIT
+
 #if os(iOS)
                 
                 let deponfw = "Depends: " + (targetPackage.depends ?? "boobs") + ","
