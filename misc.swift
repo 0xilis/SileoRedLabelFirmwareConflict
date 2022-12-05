@@ -2,25 +2,25 @@
 
 #if os(iOS)
                 
-                let deponfw = "Depends: " + (targetPackage.depends ?? "boobs") + ","
+                let deponfw = "Depends: " + (targetPackage.depends ?? "abcd") + ","
                 if deponfw.contains("firmware") {
                     if doesNotDepend(confOrDependString: deponfw, forVersion: Float(UIDevice.current.systemVersion)!) {
                         titleLabel?.textColor = UIColor.red
                         targetPackage.isFirmwareConflict = true
                     } else {
-                        let conflictwithfw = (targetPackage.conflicts ?? "cock") + ","
+                        let conflictwithfw = (targetPackage.conflicts ?? "abcd") + ","
                         if conflictwithfw.contains("firmware") {
                             if !doesNotDepend(confOrDependString: conflictwithfw, forVersion: Float(UIDevice.current.systemVersion)!) {
                                 titleLabel?.textColor = UIColor.red
                                 targetPackage.isFirmwareConflict = true
                             } else {
-                                let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "boobies") + ","
+                                let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "abcd") + ","
                                 if preDepends.contains("firmware") {
                                     if doesNotDepend(confOrDependString: preDepends, forVersion: Float(UIDevice.current.systemVersion)!) {
                                         titleLabel?.textColor = UIColor.red
                                         targetPackage.isFirmwareConflict = true
                                     } else {
-                                        let breaks = "Breaks: " + (targetPackage.conflicts ?? "cock") + ","
+                                        let breaks = "Breaks: " + (targetPackage.conflicts ?? "abcd") + ","
                                         if breaks.contains("firmware") {
                                             if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                                 titleLabel?.textColor = UIColor.red
@@ -29,7 +29,7 @@
                                         }
                                     }
                                 } else {
-                                    let breaks = "Breaks: " + (targetPackage.breaks ?? "cock") + ","
+                                    let breaks = "Breaks: " + (targetPackage.breaks ?? "abcd") + ","
                                     if breaks.contains("firmware") {
                                         if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                             titleLabel?.textColor = UIColor.red
@@ -39,13 +39,13 @@
                                 }
                             }
                         } else {
-                            let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "boobies") + ","
+                            let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "abcd") + ","
                             if preDepends.contains("firmware") {
                                 if doesNotDepend(confOrDependString: preDepends, forVersion: Float(UIDevice.current.systemVersion)!) {
                                     titleLabel?.textColor = UIColor.red
                                     targetPackage.isFirmwareConflict = true
                                 } else {
-                                    let breaks = "Breaks: " + (targetPackage.conflicts ?? "cock") + ","
+                                    let breaks = "Breaks: " + (targetPackage.conflicts ?? "abcd") + ","
                                     if breaks.contains("firmware") {
                                         if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                             titleLabel?.textColor = UIColor.red
@@ -54,7 +54,7 @@
                                     }
                                 }
                             } else {
-                                let breaks = "Breaks: " + (targetPackage.breaks ?? "cock") + ","
+                                let breaks = "Breaks: " + (targetPackage.breaks ?? "abcd") + ","
                                 if breaks.contains("firmware") {
                                     if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                         titleLabel?.textColor = UIColor.red
@@ -65,19 +65,19 @@
                         }
                     }
                 } else {
-                    let conflictwithfw = "Conflicts: " + (targetPackage.conflicts ?? "cock") + ","
+                    let conflictwithfw = "Conflicts: " + (targetPackage.conflicts ?? "abcd") + ","
                     if conflictwithfw.contains("firmware") {
                         if !doesNotDepend(confOrDependString: conflictwithfw, forVersion: Float(UIDevice.current.systemVersion)!) {
                             titleLabel?.textColor = UIColor.red
                             targetPackage.isFirmwareConflict = true
                         } else {
-                            let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "boobies") + ","
+                            let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "abcd") + ","
                             if preDepends.contains("firmware") {
                                 if doesNotDepend(confOrDependString: preDepends, forVersion: Float(UIDevice.current.systemVersion)!) {
                                     titleLabel?.textColor = UIColor.red
                                     targetPackage.isFirmwareConflict = true
                                 } else {
-                                    let breaks = "Breaks: " + (targetPackage.conflicts ?? "cock") + ","
+                                    let breaks = "Breaks: " + (targetPackage.conflicts ?? "abcd") + ","
                                     if breaks.contains("firmware") {
                                         if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                             titleLabel?.textColor = UIColor.red
@@ -86,7 +86,7 @@
                                     }
                                 }
                             } else {
-                                let breaks = "Breaks: " + (targetPackage.breaks ?? "cock") + ","
+                                let breaks = "Breaks: " + (targetPackage.breaks ?? "abcd") + ","
                                 if breaks.contains("firmware") {
                                     if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                         titleLabel?.textColor = UIColor.red
@@ -96,13 +96,13 @@
                             }
                         }
                     } else {
-                        let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "boobies") + ","
+                        let preDepends = "Pre-Depends: " + (targetPackage.preDepends ?? "abcd") + ","
                         if preDepends.contains("firmware") {
                             if doesNotDepend(confOrDependString: preDepends, forVersion: Float(UIDevice.current.systemVersion)!) {
                                 titleLabel?.textColor = UIColor.red
                                 targetPackage.isFirmwareConflict = true
                             } else {
-                                let breaks = "Breaks: " + (targetPackage.conflicts ?? "cock") + ","
+                                let breaks = "Breaks: " + (targetPackage.conflicts ?? "abcd") + ","
                                 if breaks.contains("firmware") {
                                     if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                         titleLabel?.textColor = UIColor.red
@@ -111,7 +111,7 @@
                                 }
                             }
                         } else {
-                            let breaks = "Breaks: " + (targetPackage.breaks ?? "cock") + ","
+                            let breaks = "Breaks: " + (targetPackage.breaks ?? "abcd") + ","
                             if breaks.contains("firmware") {
                                 if !doesNotDepend(confOrDependString: breaks, forVersion: Float(UIDevice.current.systemVersion)!) {
                                     titleLabel?.textColor = UIColor.red
